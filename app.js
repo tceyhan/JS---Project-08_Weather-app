@@ -29,7 +29,7 @@ submitCity.addEventListener("click", addToCard);
 
 function addToCard(e) {
   console.log(inputCity.value);
-  get(`http://api.openweathermap.org/data/2.5/weather?q=${inputCity.value}&appid=1f200bfdffc562d6b20713c8e197849d&lang=tr&units=metric`)
+  get(`https://api.openweathermap.org/data/2.5/weather?q=${inputCity.value}&appid=1f200bfdffc562d6b20713c8e197849d&lang=tr&units=metric`)
     .then((result) => {
       console.log(result);
       cardContainer.innerHTML += `
@@ -38,7 +38,7 @@ function addToCard(e) {
           <div class="card-body" id ="cardbody">
             <h5 class="card-title">${result.name}<sup>${result.sys.country}</sup></h5>
             <p class="card-text">
-              <img src="http://openweathermap.org/img/wn/${result.weather[0].icon}@2x.png" alt="">
+              <img src="https://openweathermap.org/img/wn/${result.weather[0].icon}@2x.png" alt="">
             </p>
             <p class="card-text">
               ${Math.round(result.main.temp)}
