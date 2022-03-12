@@ -38,7 +38,7 @@ function addToCard(e) {
           <div class="card-body" id ="cardbody">
             <h5 class="card-title">${result.name}<sup>${result.sys.country}</sup></h5>
             <p class="card-text">
-              <img src="https://openweathermap.org/img/wn/${result.weather[0].icon}@2x.png" alt="">
+              <img src="http://openweathermap.org/img/wn/${result.weather[0].icon}@2x.png" alt="">
             </p>
             <p class="card-text">
               ${Math.round(result.main.temp)}
