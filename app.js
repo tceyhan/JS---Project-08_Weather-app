@@ -59,10 +59,12 @@ function addToCard(e) {
   e.preventDefault();
 }
 
-cardContainer.addEventListener("click", (google) => {
+cardContainer.addEventListener("click", google);
+
+function google(e) {
+  
       window.open(`https://www.google.com/search?q=${inputCity.value}`);
       window.open(`https://tr.wikipedia.org/w/index.php?search=${inputCity.value}&title=%C3%96zel:Ara&profile=advanced&fulltext=1&ns0=1`);
-      window.open(`https://github.com/tceyhan?tab=repositories`);
       e.preventDefault();
-
-  });
+  
+};
