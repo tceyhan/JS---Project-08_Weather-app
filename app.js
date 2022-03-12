@@ -59,9 +59,9 @@ function addToCard(e) {
   e.preventDefault();
 }
 
-cardContainer.addEventListener("click", google);
+cardContainer.addEventListener("click", arama);
 
-function google(e) {
+function arama(e) {
   
       window.open(`https://www.google.com/search?q=${inputCity.value}`);
       window.open(`https://tr.wikipedia.org/w/index.php?search=${inputCity.value}&title=%C3%96zel:Ara&profile=advanced&fulltext=1&ns0=1`);
