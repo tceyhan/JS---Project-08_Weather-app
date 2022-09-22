@@ -1,4 +1,4 @@
-# JS---Project-09_Weather
+# JS---Project-08_Weather-app
 1-https://openweathermap.org/ sitesinden üye olundu.
 2-key al
 3-api koduna yapıştır fetch yaparken
